@@ -1,0 +1,33 @@
+{
+  "title": "Sitemap",
+  "links": [
+    {
+      "text": "Getting started",
+      "url": "/getting-started"
+    },
+    {
+      "text": "Navigator",
+      "url": "/navigator"
+    },
+    {
+      "text": "Sourcing JSON",
+      "url": "/json-at-buildtime"
+    },
+    {
+      "text": "Sourcing YAML",
+      "url": "/yaml-at-buildtime"
+    },
+    {
+      "text": "Shopify",
+      "url": "/shopify-test"
+    },
+    {
+      "text": "link2",
+      "url": "/page-2"
+    },
+    {
+      "text": "link3",
+      "url": "/page-3"
+    }
+  ]
+}

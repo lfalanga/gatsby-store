@@ -1,0 +1,29 @@
+{
+  "title": "Index title",
+  "links": [
+    {
+      "text": "Products",
+      "url": "https://www.gatsbyjs.com/docs/tutorial",
+      "description":
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Sit integer sem tristique lectus integer molestie sollicitudin mollis. Lectus dui ultrices convallis luctus elementum aptent volutpat semper."
+    },
+    {
+      "text": "Orders",
+      "url": "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+      "description":
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Sit integer sem tristique lectus integer molestie sollicitudin mollis. Lectus dui ultrices convallis luctus elementum aptent volutpat semper."
+    },
+    {
+      "text": "Customers",
+      "url": "https://www.gatsbyjs.com/plugins",
+      "description":
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Sit integer sem tristique lectus integer molestie sollicitudin mollis. Lectus dui ultrices convallis luctus elementum aptent volutpat semper."
+    },
+    {
+      "text": "Build and Host",
+      "url": "https://www.gatsbyjs.com/cloud",
+      "description":
+        "Lorem ipsum odor amet, consectetuer adipiscing elit. Sit integer sem tristique lectus integer molestie sollicitudin mollis. Lectus dui ultrices convallis luctus elementum aptent volutpat semper."
+    }
+  ]
+}

@@ -7,7 +7,7 @@
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
-exports.createPages = async ({ actions }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
   createPage({
     path: "/using-dsg",
@@ -15,4 +15,41 @@ exports.createPages = async ({ actions }) => {
     context: {},
     defer: true,
   })
+
+  const mdPages = await graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  mdPages.data.allMarkdownRemark.edges.map(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: require.resolve("./src/templates/markdown.js"),
+      context: {
+        slug: node.frontmatter.slug,
+      },
+    })
+  })
+}
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type AuthorJson implements Node @dontInfer {
+      name: String!
+      firstName: String!
+      email: String!
+      joinedAt: Date
+    }
+  `
+  createTypes(typeDefs)
 }
