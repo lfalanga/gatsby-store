@@ -25,3 +25,4 @@ Gatsby online store project playground.
 - [npm](https://www.npmjs.com/package/shopify-buy) : Package shopify-buy.
 - [gatsby](https://www.gatsbyjs.com/docs/how-to/querying-data/page-query/) : Querying data in pages with GraphQL.
 - [gatsby](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/) : Adding markdown pages.
+- [gatsby](https://github.com/gatsbyjs/gatsby-starter-shopify) : Gatby starter shopify.

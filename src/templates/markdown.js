@@ -12,8 +12,8 @@ export default function Markdown({
     <Layout>
       <div>
         <div>
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.description}</h2>
+          <h1>Title: {frontmatter.title}</h1>
+          <h2>Description: {frontmatter.description}</h2>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Markdown({
 }
 
 export const pageQuery = graphql`
-  query ($slug: String!) {
+  query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {

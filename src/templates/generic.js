@@ -1,13 +1,16 @@
 import React from "react"
 
-const Generic = ({ pageContext }) => {
+import Layout from "../components/layout"
+
+export default function Generic({ pageContext }) {
   return (
-    <div>
-      <h1>{pageContext.title}</h1>
-      <p>{pageContext.description}</p>
-      <p>Add more...</p>
-    </div>
+    <Layout>
+      <div>
+        <div>
+          <h1>{pageContext.title}</h1>
+          <h2>{pageContext.description}</h2>
+        </div>
+      </div>
+    </Layout>
   )
 }
-
-export default Generic
